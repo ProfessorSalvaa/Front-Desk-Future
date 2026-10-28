@@ -1,0 +1,12 @@
+{
+  "name": "innovation-spaces-local-narration",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node generate.mjs && node pack.mjs",
+    "pack": "node pack.mjs"
+  },
+  "dependencies": {
+    "kokoro-js": "1.2.1"
+  }
+}

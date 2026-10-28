@@ -1,0 +1,307 @@
+{
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+  "voice": "af_heart",
+  "speed": 0.94,
+  "clips": {
+    "opening-0": {
+      "hash": "5eb77d60570a83300d7e0d27c16dd618d519f4bef09f81cda8d09e4077a00aa0",
+      "seconds": 9.05,
+      "sampleRate": 24000,
+      "peak": 0.5475189685821533
+    },
+    "opening-1": {
+      "hash": "1a10a5c38c538b1bf24c290a28b231df0c1ec110b903156bdf158166fc3d7f1d",
+      "seconds": 8.2,
+      "sampleRate": 24000,
+      "peak": 0.5357317924499512
+    },
+    "opening-2": {
+      "hash": "c2b9c08d81372541ca69f6c59762ea95027878a044b9e5baf1807327c8d8d75e",
+      "seconds": 8.475,
+      "sampleRate": 24000,
+      "peak": 0.5192233324050903
+    },
+    "welcome-intro": {
+      "hash": "5eb77d60570a83300d7e0d27c16dd618d519f4bef09f81cda8d09e4077a00aa0",
+      "seconds": 9.05,
+      "sampleRate": 24000,
+      "peak": 0.5475189685821533
+    },
+    "welcome-awaken": {
+      "hash": "b66b609e1f57e3321ff66f7c6fd209955dca60e3477b02db3e9587766c4ec3e7",
+      "seconds": 9.875,
+      "sampleRate": 24000,
+      "peak": 0.6202365159988403
+    },
+    "welcome-identity": {
+      "hash": "411f05fa6f530d706ae194e69e6ce818b02423cb881826398e7510ab1328995d",
+      "seconds": 8.55,
+      "sampleRate": 24000,
+      "peak": 0.623033881187439
+    },
+    "welcome-pressure": {
+      "hash": "7d2e66f238086bd96c376d4ee010c18689c2f24aed61b240e593e635cef2f581",
+      "seconds": 10.9,
+      "sampleRate": 24000,
+      "peak": 0.7855163812637329
+    },
+    "welcome-anticipate": {
+      "hash": "613503cffb78df7917851e63c3be267105721197658c6b96a9e04ed908aa10b9",
+      "seconds": 10.725,
+      "sampleRate": 24000,
+      "peak": 0.6014784574508667
+    },
+    "welcome-human": {
+      "hash": "a20b5a0264c5906ed5011aedca2a8347d0f55d04a46948e70df3dcdcb22d01e6",
+      "seconds": 7.75,
+      "sampleRate": 24000,
+      "peak": 0.5389596223831177
+    },
+    "welcome-honesty": {
+      "hash": "a815533282342a2a62decbcbd9f5438ae912eb41dc5c7a9faa4ca589e258c5d6",
+      "seconds": 11.975,
+      "sampleRate": 24000,
+      "peak": 0.5150092840194702
+    },
+    "service-intro": {
+      "hash": "eb66046520810d48ec115a47f6af4f0db9195e7da4cc59cfc72808b55806e04e",
+      "seconds": 11.075,
+      "sampleRate": 24000,
+      "peak": 0.5492309331893921
+    },
+    "service-arrival": {
+      "hash": "3919e669a6396c0f47a2ab2475e9b47f2267fd0e4fa11b2dbd32498b2548cff1",
+      "seconds": 9.625,
+      "sampleRate": 24000,
+      "peak": 0.5289916396141052
+    },
+    "service-consent": {
+      "hash": "89617dff40a76b6429cdfe4802f7c66b04135f39f844320966d3d46155d0ecea",
+      "seconds": 10.575,
+      "sampleRate": 24000,
+      "peak": 0.6788836121559143
+    },
+    "service-checkin": {
+      "hash": "e720789b49411f27f21a7f556ced74c9a8fbffe6028ae3b620c11164346a531c",
+      "seconds": 12.65,
+      "sampleRate": 24000,
+      "peak": 0.6179442405700684
+    },
+    "service-guide": {
+      "hash": "48c4ee6e1d72808ea4aa9d42cb1c31ff38ae1230c26272998671fce7dcb2da7a",
+      "seconds": 11.6,
+      "sampleRate": 24000,
+      "peak": 0.6269830465316772
+    },
+    "service-requests": {
+      "hash": "7d429395091d0f3be42fba4ceb7a5728a49227e75e0427a65141949678911eba",
+      "seconds": 10.6,
+      "sampleRate": 24000,
+      "peak": 0.8975026607513428
+    },
+    "service-adapt": {
+      "hash": "d33ee769b211919cf75d145ec387acf03d06040390ca6242aab19f81d4d96384",
+      "seconds": 8.4,
+      "sampleRate": 24000,
+      "peak": 0.803857147693634
+    },
+    "service-handoff": {
+      "hash": "664c262a3396a36ade6075028b1a8367622edac96c434c9c01e3dce26f884ab0",
+      "seconds": 10.85,
+      "sampleRate": 24000,
+      "peak": 0.5054917931556702
+    },
+    "intelligence-intro": {
+      "hash": "8b85bf13a964926a3ecefc5ecdd72ac1753f6177e11df774dbb3a66e81305770",
+      "seconds": 9.45,
+      "sampleRate": 24000,
+      "peak": 0.663898229598999
+    },
+    "intelligence-build": {
+      "hash": "d2abe4be3e98c824f2e19922526fa4e3dfcdf843054493fa89938f37cec91164",
+      "seconds": 13.8,
+      "sampleRate": 24000,
+      "peak": 0.6876049637794495
+    },
+    "intelligence-physical": {
+      "hash": "6eb39deb5e5003644de2f070984992f7155c14864fd3123116253d547bf3f8f0",
+      "seconds": 12.2,
+      "sampleRate": 24000,
+      "peak": 0.707587718963623
+    },
+    "intelligence-spatial": {
+      "hash": "3c682e4765dbf1a099528dda492551b32deda492e5c72227d22a9b4b94cc99a4",
+      "seconds": 11.05,
+      "sampleRate": 24000,
+      "peak": 0.5080744624137878
+    },
+    "intelligence-robotics": {
+      "hash": "ad1aa9ae7f0c1b4707fd8546b933c24913bb1c5d3edd79b01ab60185e5d0bf9a",
+      "seconds": 12,
+      "sampleRate": 24000,
+      "peak": 0.5298193097114563
+    },
+    "intelligence-multimodal": {
+      "hash": "10f01469dabd615f34648415b5b39b824a9dc69ae89e9df0f70b9b5d8af1835c",
+      "seconds": 14.175,
+      "sampleRate": 24000,
+      "peak": 0.5610219240188599
+    },
+    "intelligence-agentic": {
+      "hash": "9bd5ede6e4e2f07a674815a53bcf7e0057021ad0c172fa92abbecc617fd3e76d",
+      "seconds": 12.25,
+      "sampleRate": 24000,
+      "peak": 0.6013674736022949
+    },
+    "intelligence-twins": {
+      "hash": "74411dce3d88c899eb4cdd221ec10ea7ad47f555f638349ea6cc70c980ea1789",
+      "seconds": 11.725,
+      "sampleRate": 24000,
+      "peak": 0.5217583179473877
+    },
+    "intelligence-edge": {
+      "hash": "c25278ad1166567b170336c0c24251bafff938b171ea601830d8cdc82c8ab34e",
+      "seconds": 12.175,
+      "sampleRate": 24000,
+      "peak": 0.513372540473938
+    },
+    "intelligence-trust": {
+      "hash": "af9816b2446359aab43ec20dd918d69605b489908b85e362a74714e54a7d34bd",
+      "seconds": 13.35,
+      "sampleRate": 24000,
+      "peak": 0.6779286861419678
+    },
+    "journey-intro": {
+      "hash": "0ea2d6992bb04fd8ebd4471015bdc3364740857079a49cc2ba0b28398f7ca284",
+      "seconds": 11.35,
+      "sampleRate": 24000,
+      "peak": 0.5765146613121033
+    },
+    "journey-play": {
+      "hash": "6d68f476c27f0c64481f1ba969df501a374228d0b7ab50d36203ecc9f4bb44cf",
+      "seconds": 13.1,
+      "sampleRate": 24000,
+      "peak": 0.6572669148445129
+    },
+    "journey-arrival": {
+      "hash": "03cfc5044e4d8e07f9e645d1579c1f4c60f67e20f157781e288c539cb72fbfb5",
+      "seconds": 9.2,
+      "sampleRate": 24000,
+      "peak": 0.563944935798645
+    },
+    "journey-ready": {
+      "hash": "d8b44cbf8a212240e2a466bdb0a4bdd9650e1b74f3bc3dd8243a2f2fc4d95b95",
+      "seconds": 10.3,
+      "sampleRate": 24000,
+      "peak": 0.48213332891464233
+    },
+    "journey-welcome": {
+      "hash": "c7a08950fab59e9f4147259f1ec0689ea77a35e35557bff9ff658ae6ac8bbd4b",
+      "seconds": 9.3,
+      "sampleRate": 24000,
+      "peak": 0.5353483557701111
+    },
+    "journey-wayfinding": {
+      "hash": "56a72b954a559a9e45d50dfb3f93801cd584e69873131045e4811219eac8bf71",
+      "seconds": 11.25,
+      "sampleRate": 24000,
+      "peak": 0.9269621968269348
+    },
+    "journey-people": {
+      "hash": "3e258d0e9265a4733bde1b7d338e2c8126edf3bfb5e24d89f499849fce4f023a",
+      "seconds": 8.675,
+      "sampleRate": 24000,
+      "peak": 0.6808153986930847
+    },
+    "invitation-intro": {
+      "hash": "8bc90c7407a0a423a0cc5f601a805ffad53cd1a7fdd0c6b26f6a26ab198bd721",
+      "seconds": 9.375,
+      "sampleRate": 24000,
+      "peak": 0.5625778436660767
+    },
+    "invitation-checkin": {
+      "hash": "26ca11f06b9f72b377f47d67183a9469f73d8c2e8695b9803ad8414723f86f10",
+      "seconds": 10.05,
+      "sampleRate": 24000,
+      "peak": 0.5874747037887573
+    },
+    "invitation-checkout": {
+      "hash": "5360370f0480e93897da32b58c5729f00a82ccd3489a53810ec24aaef9cf58b6",
+      "seconds": 11.4,
+      "sampleRate": 24000,
+      "peak": 0.8471882939338684
+    },
+    "invitation-dining": {
+      "hash": "aec953daf4d4d45dc296a3b674fce3da1091842301191bb26c963eeb27e10e82",
+      "seconds": 11.3,
+      "sampleRate": 24000,
+      "peak": 0.5476146936416626
+    },
+    "invitation-questions": {
+      "hash": "1f12634c41d01105bcf54ebbb25569e73c9a21025445d70772d61bc53085bcc6",
+      "seconds": 9.55,
+      "sampleRate": 24000,
+      "peak": 0.5732773542404175
+    },
+    "invitation-physical": {
+      "hash": "91efffc5f66e3cda3d4f59978919b04235aeab6e0065199a0df1ac85a3ea863b",
+      "seconds": 10.3,
+      "sampleRate": 24000,
+      "peak": 0.6047592759132385
+    },
+    "question-staff": {
+      "hash": "15256a431b8c068500de962361f9a00795c7894c195d463b7da5933bd22d548f",
+      "seconds": 10.925,
+      "sampleRate": 24000,
+      "peak": 0.5239266753196716
+    },
+    "question-physical": {
+      "hash": "748839e66685fbc7689373ff51b92e81b06492953acf6fead41aa814eb7322ff",
+      "seconds": 10.825,
+      "sampleRate": 24000,
+      "peak": 0.8349307179450989
+    },
+    "question-spatial": {
+      "hash": "83f64df13e81d461adcdbaa768be81a53f3df514ebd5998a34d3cef08c6756d1",
+      "seconds": 10.2,
+      "sampleRate": 24000,
+      "peak": 0.47399207949638367
+    },
+    "question-privacy": {
+      "hash": "ecc64f501ae204263e7af6bff85fe310089e1ecbc9c9dfda838c57d834de217b",
+      "seconds": 12.625,
+      "sampleRate": 24000,
+      "peak": 0.5361980199813843
+    },
+    "question-ready": {
+      "hash": "fe32b7c8a638843e393b0c514efd47f7304e031274143a5ed81e7d8c58ab6946",
+      "seconds": 12.025,
+      "sampleRate": 24000,
+      "peak": 0.5275261998176575
+    },
+    "question-accessibility": {
+      "hash": "7ac89189001b8f83b705e7b0762b3b34009d9eb42527818f8fb04585efcd39ba",
+      "seconds": 13.825,
+      "sampleRate": 24000,
+      "peak": 0.5745453238487244
+    },
+    "question-unknown": {
+      "hash": "60a9023bfe6aecefaef6678a3632ac631321133e0843d3daed4eb206d0287f1d",
+      "seconds": 10.1,
+      "sampleRate": 24000,
+      "peak": 0.7548613548278809
+    },
+    "question-recording": {
+      "hash": "0e5c8469deca607261228c5c18a181436a742f99ea822a451909c3eb7c1cb964",
+      "seconds": 12.675,
+      "sampleRate": 24000,
+      "peak": 0.7200927138328552
+    },
+    "question-real": {
+      "hash": "68a06913ce1cc2eff10cbda7ec60d697fd0a0905727bf19c826d84259cddb64e",
+      "seconds": 9.775,
+      "sampleRate": 24000,
+      "peak": 0.7473078966140747
+    }
+  }
+}

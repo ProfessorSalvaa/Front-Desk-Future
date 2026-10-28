@@ -1,0 +1,124 @@
+/* Keep all three entries inside the fixed portrait selector. */
+#hub .doors-three { gap: 20px; margin-top: 34px; }
+#hub .doors-three .door { height: 384px; padding: 28px 36px; overflow: hidden; }
+#hub .doors-three .door h2 { font-size: 47px; margin-top: 10px; max-width: 550px; }
+#hub .doors-three .door p { font-size: 23px; margin-top: 10px; line-height: 1.4; max-width: 530px; }
+#hub .doors-three .door .k { font-size: 21px; }
+#hub .doors-three .door .go { height: 64px; min-height: 64px; width: 220px; font-size: 23px; }
+#hub .doors-three .door .preview { top: -165px; right: -25px; width: 470px; }
+#hub .doors-three .door-front { background-color: rgba(25, 45, 37, 0.6); }
+.fd-door-art { position: absolute; right: 12px; top: 20px; width: 340px; height: 340px; opacity: 0.8; animation: fdHover 7s ease-in-out infinite; }
+body.proto #hub .doors-three .door { height: 384px; padding: 28px 16px; }
+body.proto #hub .doors-three .door .preview { width: 360px; height: 350px; top: 10px; right: -5px; }
+body.proto #hub .doors-three .door::before { width: 320px; right: 5px; bottom: 5px; height: 30px; }
+body.proto #hub .doors-three .door::after { display: none; }
+body.proto #hub .doors-three .door-front {
+  display: grid; grid-template-columns: 550px 1fr; grid-template-rows: 32px 110px 66px 76px;
+  align-content: center; gap: 8px 0; padding: 26px 32px; border-radius: 30px;
+  background: linear-gradient(115deg, #ffffffde, #edf6edb8 65%, #d9eee580);
+  border: 1px solid #ffffff; box-shadow: inset 0 2px 0 #fff, 0 14px 25px #173d2212;
+}
+body.proto #hub .doors-three .door-front > :not(.fd-door-art) { grid-column: 1; margin: 0; flex-shrink: 0; }
+body.proto #hub .doors-three .door-front h2 { line-height: 1.1; align-self: center; }
+body.proto #hub .doors-three .door-front p { align-self: start; }
+body.proto #hub .doors-three .door-front .go { align-self: end; }
+/* The shared Proto rule makes non-preview children relative; keep the art out of text flow. */
+body.proto #hub .doors-three .door-front > .fd-door-art {
+  position: absolute; width: 360px; height: 360px; right: 16px; top: 0; z-index: 0;
+  filter: drop-shadow(0 22px 12px #123d352c); opacity: 1;
+}
+body.proto #hub .doors-three .door-front::before {
+  width: 235px; height: 26px; right: 70px; bottom: 24px;
+  border: 0; background: radial-gradient(ellipse, #28534335, transparent 70%);
+  box-shadow: none; animation: fdShadow 6s ease-in-out infinite;
+}
+
+#frontDesk {
+  --fd-bg: #080f0d; --fd-text: #f1f6ec; --fd-muted: #b0c8bc; --fd-accent: #7bdfbd;
+  --fd-line: #a8d8be38; --fd-card: #c7ffe50d; --fd-button: #143127;
+  position: absolute; inset: 0; z-index: 25; overflow: hidden;
+  background: radial-gradient(ellipse at 50% 43%, #143c31, transparent 57%), var(--fd-bg);
+  color: var(--fd-text); text-align: left;
+}
+#frontDesk button { font: inherit; border: 1px solid var(--fd-line); background: var(--fd-button); color: var(--fd-text); min-height: 88px; border-radius: 24px; padding: 12px 26px; font-size: 24px; transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+#frontDesk button:hover { border-color: var(--fd-accent); }
+#frontDesk button:active { transform: scale(0.97); }
+#frontDesk button:focus-visible { outline: 3px solid var(--fd-accent); outline-offset: 5px; }
+.fd-header { position: absolute; z-index: 3; top: 56px; left: 60px; right: 60px; }
+.fd-header .eyebrow { font-size: 17px; letter-spacing: 0.12em; gap: 18px; color: var(--fd-muted); }
+#fdChapter { font-size: 20px; color: var(--fd-accent); white-space: nowrap; }
+#frontDesk #homeF { padding: 0; background: transparent; }
+#frontDesk #fdTour { background: transparent; border-radius: 999px; font-size: 22px; }
+#frontDesk #fdTour[aria-pressed="true"] { background: var(--fd-accent); color: var(--fd-bg); }
+#fdTitle { font-size: 68px; font-weight: 600; line-height: 1.07; letter-spacing: -2px; margin: 22px 0 12px; }
+#fdCue { font-size: 27px; margin: 0; color: var(--fd-muted); }
+.fd-theatre { position: absolute; left: 0; top: 290px; width: 1080px; height: 1160px; }
+#fdCanvas, #fdConnections, #fdHotspots { position: absolute; inset: 0; width: 1080px; height: 1160px; }
+#fdCanvas { touch-action: none; cursor: grab; }
+#fdCanvas:active { cursor: grabbing; }
+#fdConnections { pointer-events: none; overflow: visible; }
+#fdConnections path { fill: none; stroke: var(--fd-accent); stroke-width: 1; opacity: 0.22; transition: opacity 0.3s; }
+#fdConnections path.selected { opacity: 0.8; stroke-width: 2; }
+#fdHotspots { pointer-events: none; }
+#frontDesk .fd-spot { position: absolute; left: 40px; width: 215px; min-height: 88px; display: flex; align-items: center; gap: 15px; padding: 10px 16px; border: 0; background: transparent; pointer-events: auto; text-align: left; border-radius: 18px; font-size: 22px; font-weight: 600; }
+#frontDesk .fd-spot.right { left: auto; right: 40px; flex-direction: row-reverse; text-align: right; }
+.fd-spot i { position: relative; display: block; width: 20px; height: 20px; flex: none; border-radius: 50%; background: var(--fd-accent); box-shadow: 0 0 25px var(--fd-accent); }
+.fd-spot i::after { content: ""; position: absolute; inset: -12px; border: 1px solid var(--fd-accent); border-radius: 50%; animation: fdPing 2.8s ease-out infinite; }
+.fd-spot span { color: var(--fd-text); text-shadow: 0 2px 10px var(--fd-bg); }
+#frontDesk .fd-spot[aria-pressed="true"] { background: #90ffd818; }
+.fd-spot[aria-pressed="true"] span { color: var(--fd-accent); }
+.fd-spot.seen i { background: var(--fd-bg); border: 3px solid var(--fd-accent); }
+.fd-touch { position: absolute; top: 12px; left: 0; right: 0; text-align: center; color: var(--fd-accent); font-size: 20px; letter-spacing: 0.08em; pointer-events: none; }
+.fd-touch span { color: var(--fd-muted); font-size: 18px; margin-left: 10px; }
+#fdSceneStatus { position: absolute; top: 450px; left: 285px; right: 285px; font-size: 28px; text-align: center; }
+.fd-lower { position: absolute; z-index: 5; left: 60px; right: 60px; bottom: 295px; display: flex; flex-direction: column; gap: 25px; pointer-events: none; }
+.fd-actions { display: flex; justify-content: center; gap: 16px; pointer-events: auto; }
+#frontDesk .fd-actions button { border-radius: 999px; background: #10271de6; border-color: var(--fd-accent); }
+#frontDesk #fdAct { color: #061b13; background: linear-gradient(120deg, #9eefd3, #58cda2); min-width: 270px; font-weight: 600; box-shadow: 0 0 45px #67eebc20; }
+.fd-conversation { min-height: 285px; padding: 23px 36px 25px; background: var(--fd-card); border: 1px solid var(--fd-line); border-radius: 32px; box-shadow: var(--glass-shadow, 0 20px 45px #0004); backdrop-filter: blur(25px); -webkit-backdrop-filter: blur(25px); pointer-events: auto; }
+.fd-speaker-row { display: flex; align-items: center; gap: 20px; }
+.fd-orb { width: 42px; height: 42px; border-radius: 50%; flex: none; background: radial-gradient(circle at 32% 27%, #fff, #91efd2 26%, #207b5f 70%); box-shadow: 0 0 25px #8affa978; }
+.fd-orb { transform: scale(calc(1 + var(--fd-voice, 0) * 0.18)); }
+#fdSpeaker { font-size: 30px; font-weight: 600; color: var(--fd-accent); flex: 1; margin: 0; }
+#frontDesk #fdVoice { min-height: 88px; padding: 10px 18px; background: transparent; font-size: 21px; }
+#fdTranscript { font-size: 30px; line-height: 1.42; margin: 12px 0 20px; min-height: 128px; }
+#fdAudioProgress { display: block; width: 100%; height: 4px; accent-color: var(--fd-accent); border: 0; }
+#fdAudioStatus { font-size: 18px; color: var(--fd-muted); margin: 12px 0 0; }
+#fdAudioStatus:empty { display: none; }
+.fd-wave { display: flex; align-items: center; gap: 5px; height: 30px; }
+.fd-wave i { display: block; height: 5px; width: 3px; background: var(--fd-accent); border-radius: 4px; }
+.fd-wave i { height: calc(5px + var(--fd-voice, 0) * 22px); }
+.fd-wave i:nth-child(2n) { height: calc(5px + var(--fd-voice, 0) * 32px); }
+.fd-wave i:nth-child(3n) { height: calc(5px + var(--fd-voice, 0) * 40px); }
+.fd-panel { position: absolute; z-index: 8; top: 490px; left: 90px; right: 90px; padding: 36px; border: 1px solid var(--fd-accent); border-radius: 32px; background: var(--fd-bg); box-shadow: 0 25px 80px #0008; }
+.fd-panel h2 { margin: 0; font-size: 34px; font-weight: 600; }
+.fd-panel p { font-size: 23px; color: var(--fd-muted); }
+.fd-panel-head { display: flex; align-items: center; justify-content: space-between; gap: 15px; }
+#fdQuestionList { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+#frontDesk .fd-panel button { font-size: 23px; text-align: left; min-height: 92px; }
+#frontDesk #fdCloseQuestions { min-width: 88px; font-size: 36px; text-align: center; padding: 5px; }
+#fdHandoffOptions > button { width: 100%; margin-top: 16px; }
+#fdHandoffResult { position: absolute; left: 180px; right: 180px; top: 960px; z-index: 6; margin: 0; padding: 22px; background: var(--fd-bg); border: 1px solid var(--fd-accent); border-radius: 24px; font-size: 25px; text-align: center; }
+#fdHandoffResult:empty { display: none; }
+#fdChapterNav { position: absolute; left: 60px; right: 60px; bottom: 106px; height: 150px; display: flex; gap: 8px; border-radius: 30px; padding: 14px; background: var(--fd-card); border: 1px solid var(--fd-line); backdrop-filter: blur(24px); }
+#frontDesk #fdChapterNav button { flex: 1; width: 0; padding: 10px; border: 0; background: transparent; border-radius: 20px; font-size: 23px; color: var(--fd-muted); }
+#frontDesk #fdChapterNav [aria-selected="true"] { background: linear-gradient(150deg, #8ceac8, #52be9a); color: #072219; box-shadow: 0 10px 25px #0003; font-weight: 700; }
+.fd-foot { position: absolute; left: 60px; right: 60px; bottom: 43px; display: flex; justify-content: space-between; color: var(--fd-muted); font-size: 18px; }
+body.proto #frontDesk { --fd-bg: #edf2ef; --fd-text: #142f25; --fd-muted: #476154; --fd-accent: #186448; --fd-line: #476d4e38; --fd-card: #fffffff0; --fd-button: #e8f0e9; background: radial-gradient(ellipse at 50% 40%, #fff 10%, #e4f2e9 48%, #edf2ef 75%); }
+body.proto .fd-conversation, body.proto #fdChapterNav { border-color: #fff; box-shadow: inset 0 2px 1px #fff, -8px 22px 30px #2043321c, 0 3px 6px #2043320a; }
+body.proto #frontDesk .fd-spot { background: #ffffffc9; border: 1px solid #cddfd3; box-shadow: 0 5px 15px #23473512; }
+body.proto #frontDesk .fd-spot[aria-pressed="true"] { background: #d7efd8; border-color: #529971; box-shadow: 0 6px 20px #32794e25; }
+body.proto .fd-spot i { box-shadow: 0 0 0 5px #2f8a5820; }
+body.proto #fdConnections path { opacity: 0.4; }
+body.proto #fdConnections path.selected { opacity: 0.9; }
+body.proto #frontDesk .fd-actions button { background: #eef5e8; }
+body.proto #frontDesk #fdAct, body.proto #frontDesk #fdChapterNav [aria-selected="true"] { background: linear-gradient(130deg, #c8ed9a, #86bc25); }
+body.proto .fd-spot span { text-shadow: 0 1px 8px #fff; }
+@keyframes fdHover { 50% { transform: translateY(-9px); } }
+@keyframes fdShadow { 50% { transform: scale(0.87); opacity: 0.65; } }
+@keyframes fdPing { from { transform: scale(0.5); opacity: 0.8; } to { transform: scale(1.4); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .fd-door-art, .fd-spot i::after, body.proto #hub .doors-three .door-front::before { animation: none; }
+  .fd-orb { transform: none; }
+  #frontDesk button, #fdConnections path { transition: none; }
+}
